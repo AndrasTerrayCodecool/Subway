@@ -18,8 +18,8 @@ public class Sandwich extends OrderItem {
     }
 
     @Override
-    public int calculatePrice() {
-        return ingredients.stream().map(ingredient -> ingredient.getPrice()).reduce(0, (price1, price2) -> price1 + price2);
+    public double calculatePrice() {
+        return ingredients.stream().map(ingredient -> ingredient.getPrice()).reduce(0.0, (price1, price2) -> price1 + price2);
     }
 
     public void addIngredients(Ingredient... ingredients) {

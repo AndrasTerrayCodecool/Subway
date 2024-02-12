@@ -2,14 +2,14 @@ package codecool.com.subway.orderitem.sandwich;
 
 public class Ingredient {
     private String name;
-    private int price;
+    private double price;
 
-    public Ingredient(String name, int price) {
+    public Ingredient(String name, double price) {
         this.name = name;
         this.price = price;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 

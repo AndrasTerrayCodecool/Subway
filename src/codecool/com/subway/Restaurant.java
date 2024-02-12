@@ -22,9 +22,9 @@ public class Restaurant {
         this.orderItems.addAll(Arrays.asList(orderItems));
     }
 
-    public int calculateIncome() {
+    public double calculateIncome() {
         System.out.println(orderItems);
-        return orderItems.stream().map(orderItem -> orderItem.calculatePrice()).reduce(0, (price1, price2) -> price1 + price2 );
+        return orderItems.stream().map(orderItem -> orderItem.calculatePrice()).reduce(0.0, (price1, price2) -> price1 + price2 );
     }
 
     @Override

@@ -10,7 +10,7 @@ public class Drink extends OrderItem {
     }
 
     @Override
-    public int calculatePrice() {
+    public double calculatePrice() {
         return flavor.getPrice();
     }
 
